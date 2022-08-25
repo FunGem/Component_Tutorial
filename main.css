@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.background-changer-app{
+    display: flex;
+    justify-content: center;
+    /* border: 3px solid black; */
+    padding: 40px 0;
+    margin-bottom: 20px;
+}
+
+
+.bgchanger-app-holder{
+    /* border: 3px solid tomato; */
+    width: 450px;
+    height: 250px;
+    display: flex;
+}
+
+.leftchild{
+    width: 15%;
+    height: 100%;
+    background: #d9d9d9;
+}
+.rightchild{
+    width: 85%;
+    height: 100%;
+    background: #ffa800;
+}
+
+
+
+
+.working-with-margin {
+    border: 3px solid black;
+    display: flex;
+}
+.child1,
+.child2 {
+    width: 250px;
+    height: 200px;
+
+
+}
+.child1 {
+    /* border-width: 3PX;
+    border-style: solid;
+    border-color: red; */
+
+    /* border: 3px solid red; */
+    /* margin-right: 50px; */
+    border-right: 8px solid tomato;
+    border-left: 10px dashed red;
+}
+.child2 {
+    border: 3px dashed blue;
+    margin-left: 100px;
+    padding: 30PX 10PX 30PX 10PX;
+    /* padding-top: 30px;
+    padding-right: 10PX; */
+}
+.child2-innerchild{
+    background: tomato;
+    height: 100%;
+    width: 100%;
+}
+
+.working-with-flexbox-row{
+    margin-top: 50px;
+    border: 3px solid tomato;
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.working-with-flexbox-column {
+    margin-top: 50px;
+    border: 3px solid skyblue;
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flex-child{
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    
+}
+
+
+/* working with combinators */
+/* Descendant selector */
+.working-with-combinators div {
+    background: tomato;
+
+}
+
+/* child selector */
+
+.working-with-combinators>p{
+    color: blue;
+}
+
+/* Adjacent sibling selector (targetting paragraph that are next to a division)*/
+div+p{
+    background-color: aqua;
+}
+
+/* general sibling selector */
+div~p{
+    background: tomato;
+    color: white;
+}
